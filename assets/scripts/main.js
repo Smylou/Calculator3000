@@ -4,20 +4,22 @@ let categorie = document.getElementById("categorie")
 let resultat = document.getElementsByName("resultat")[0]
 
 
-function calculIMC(){
-   
-    
+function calculIMC() {
+
     let result = parseFloat(premierNombre.value) / Math.pow(parseFloat(deuxiemeNombre.value), 2)
     if (result < 18.5) {
         categorie.innerHTML = "En sous poids"
-    }else if(result >= 18.5 && result <= 24.9){
+    } else if (result >= 18.5 && result <= 24.9) {
         categorie.innerHTML = "Normal"
-    }else if(result >= 25.0 && result <= 29.9){
+    } else if (result >= 25.0 && result <= 29.9) {
         categorie.innerHTML = "Sur-poids"
-    }else {
+    } else {
         categorie.innerHTML = "Obésité"
     }
-    
-    resultat.value = result
-
+    if (isNaN(result)) {
+        categorie.innerHTML = "Veuillez rentrer un poids et/ou une taille valide"
+        resultat.value = 0
+    } else {
+        resultat.value = result
+    }
 }

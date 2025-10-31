@@ -2,24 +2,27 @@
 <html lang="fr">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Calculatrice</title>
-    
+
 </head>
 
 <body>
-    <h1>Calcutor 3000</h1>
-    <label>Votre poids :</label>
-    <input type="text" name="premierNombre">
-    <label>Votre taille en mètre :</label>
-    <input type="text" name="deuxiemeNombre">
-    <button onClick="calculIMC()">Calculer</button>
-    <input type="text" name="resultat" disabled>
-    <p id="categorie"></p>
+    <div>
+        <h1>Calcutor 3000</h1>
+        <label>Votre poids :</label>
+        <input type="number" name="premierNombre">
+        <label>Votre taille en mètre :</label>
+        <input type="number" name="deuxiemeNombre">
+        <button onClick="calculIMC()">Calculer</button>
+        <input type="text" name="resultat" disabled>
+        <p id="categorie"></p>
+    </div>
 </body>
 
 <script src="./assets/scripts/main.js"></script>
+
 </html>
