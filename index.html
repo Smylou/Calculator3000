@@ -12,12 +12,13 @@
 
 <body>
     <div>
-        <h1>Calcutor 3000</h1>
+        <h1>Calculator 3000</h1>
         <label>Votre poids :</label>
-        <input type="number" name="premierNombre">
+        <input type="number" name="premierNombre" min="0"> 
         <label>Votre taille en mètre :</label>
-        <input type="number" name="deuxiemeNombre">
+        <input type="number" name="deuxiemeNombre" min="0">
         <button onClick="calculIMC()">Calculer</button>
+        <label>Votre IMC  :</label>
         <input type="text" name="resultat" disabled>
         <p id="categorie"></p>
     </div>

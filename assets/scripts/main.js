@@ -1,6 +1,7 @@
 let premierNombre = document.getElementsByName("premierNombre")[0]
 let deuxiemeNombre = document.getElementsByName("deuxiemeNombre")[0]
 let categorie = document.getElementById("categorie")
+console.log(categorie)
 let resultat = document.getElementsByName("resultat")[0]
 
 
@@ -20,6 +21,6 @@ function calculIMC() {
         categorie.innerHTML = "Veuillez rentrer un poids et/ou une taille valide"
         resultat.value = 0
     } else {
-        resultat.value = result
+        resultat.value = result.toFixed(2)  
     }
 }
