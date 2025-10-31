@@ -21,6 +21,6 @@ function calculIMC() {
         categorie.innerHTML = "Veuillez rentrer un poids et/ou une taille valide"
         resultat.value = 0
     } else {
-        resultat.value = result.toFixed(2)  
+        resultat.value = result.toFixed(2)
     }
 }
